@@ -29,7 +29,7 @@ public class TryIt {
             o.getLines().add(new OrderLine("C", 1, 150));
             System.out.println("ERROR: Should not be able to modify the list!");
         } catch (UnsupportedOperationException e) {
-            System.out.println("✓ Correctly prevented modification of order lines list");
+            System.out.println("Correctly prevented modification of order lines list");
         }
         
         // Demonstrate validation
@@ -40,7 +40,7 @@ public class TryIt {
                 .build();
             System.out.println("ERROR: Should have thrown exception for invalid email!");
         } catch (IllegalArgumentException e) {
-            System.out.println("✓ Correctly validated email: " + e.getMessage());
+            System.out.println("Correctly validated email: " + e.getMessage());
         }
         
         try {
@@ -50,7 +50,7 @@ public class TryIt {
                 .build();
             System.out.println("ERROR: Should have thrown exception for invalid discount!");
         } catch (IllegalArgumentException e) {
-            System.out.println("✓ Correctly validated discount: " + e.getMessage());
+            System.out.println("Correctly validated discount: " + e.getMessage());
         }
         
         try {
@@ -58,7 +58,7 @@ public class TryIt {
                 .build(); // No lines
             System.out.println("ERROR: Should have thrown exception for empty lines!");
         } catch (IllegalArgumentException e) {
-            System.out.println("✓ Correctly validated required lines: " + e.getMessage());
+            System.out.println("Correctly validated required lines: " + e.getMessage());
         }
     }
 }
